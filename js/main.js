@@ -40,10 +40,8 @@ document.getElementById("play").addEventListener("click", function(){
 
     if (newUserNumber > newPcNumber){
         gameOutcome.innerHTML=`Congratulazioni, hai vinto!`;
-        console.log("erroremio");
     } else if (newUserNumber < newPcNumber) {
         gameOutcome.innerHTML=`Mi dispiace, hai perso!`;
-        console.log("erroretuo");
     } else {
         gameOutcome.innerHTML=`Nessun vincitore, riprova!`;
     }
