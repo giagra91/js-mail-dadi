@@ -1,3 +1,11 @@
 body{
     font-family: "Montserrat", sans-serif;
 }
+
+.my-border-radius{
+    border-radius: 30px;
+}
+
+.my-bg-color{
+    background-color: rgb(219, 179, 109);
+}
