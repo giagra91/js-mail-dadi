@@ -42,15 +42,22 @@
 
         </div>
 
-        <div class="container-fluid bg-secondary">
+        <div class="container-fluid bg-info py-4 my-4">
             <div class="row">
                 <div class="col-12 text-center">
-                    <button id="play">Gioca</button>
+                    <button class="btn btn-primary" id="play">Gioca</button>
                 </div>
                 <div class="col-6 text-center">
-                    <span id="my-number"></span>
+                    <h3>Ecco il tuo numero</h3>
+                    <p id="my-number"></p>
                 </div>
-                <div class="col-6"></div>
+                <div class="col-6 text-center">
+                    <h3>Ecco il numero dell'avversario</h3>
+                    <p id="pc-number"></p>
+                </div>
+                <div class="col-12 text-center">
+                    <h2 class="text-dark" id="game-outcome"></h2>
+                </div>            
             </div>
         </div>
     </main>

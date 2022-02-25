@@ -26,3 +26,26 @@ document.getElementById("check-mail").addEventListener("click", function(){
         userOutput.innerHTML= "Non puoi accedere";
     }
 })
+
+
+// Gioco dadi
+let userNumber = document.getElementById("my-number");
+let pcNumber = document.getElementById("pc-number");
+let gameOutcome = document.getElementById("game-outcome");
+
+document.getElementById("play").addEventListener("click", function(){
+
+    let newUserNumber = userNumber.innerHTML=Math.floor((Math.random()*6)+1);
+    let newPcNumber = pcNumber.innerHTML=Math.floor((Math.random()*6)+1);
+
+    if (newUserNumber > newPcNumber){
+        gameOutcome.innerHTML=`Congratulazioni, hai vinto!`;
+        console.log("erroremio");
+    } else if (newUserNumber < newPcNumber) {
+        gameOutcome.innerHTML=`Mi dispiace, hai perso!`;
+        console.log("erroretuo");
+    } else {
+        gameOutcome.innerHTML=`Nessun vincitore, riprova!`;
+    }
+
+})
