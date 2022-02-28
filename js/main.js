@@ -33,6 +33,7 @@ document.getElementById("check-mail").addEventListener("click", function(){
 document.getElementById("clean").addEventListener("click", function(){
     userOutput.innerHTML= "";
     userMail.value="";
+    emailFound = "";
 })
 
 // Gioco dadi
