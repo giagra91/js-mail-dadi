@@ -4,11 +4,12 @@ const acceptedMail = ["topogigio@gmail.com", "pincopallino@gmail.com", "boolean@
 const userMail = document.getElementById(`user-mail`);
 // Variabile riferita all'output della ricerca dopo il ciclo for
 let userOutput = document.getElementById("mail-output");
-// Variabile riferita al check della mail
-let emailFound = false;
 
 // addEventListener per avviare il ciclo e verificare la mail
 document.getElementById("check-mail").addEventListener("click", function(){
+
+    // Variabile riferita al check della mail
+    let emailFound = false;
 
     // userMail.value="";
     let newMail = userMail.value.toLowerCase();
@@ -33,7 +34,6 @@ document.getElementById("check-mail").addEventListener("click", function(){
 document.getElementById("clean").addEventListener("click", function(){
     userOutput.innerHTML= "";
     userMail.value="";
-    emailFound = "";
 })
 
 // Gioco dadi
